@@ -1,4 +1,5 @@
-﻿using FactoryMethod;
+﻿using Design_Patterns.AbstractFactory;
+using FactoryMethod;
 using System;
 
 namespace Design_Patterns
@@ -17,8 +18,14 @@ namespace Design_Patterns
             switch (id)
             {
                 case 0:
+                    Console.Clear();
                     Console.WriteLine("");
                     ExecucaoFactoryMethod.Executar();
+                    break;
+                case 1:
+                    Console.Clear();
+                    Console.WriteLine("");
+                    ExecucaoAbstractFactory.Executar();
                     break;
                 default:
                     Console.WriteLine("Pattern não encontrado!");
