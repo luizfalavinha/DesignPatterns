@@ -1,4 +1,5 @@
 ﻿using Design_Patterns.AbstractFactory;
+using Design_Patterns.Comportamental.Observer;
 using FactoryMethod;
 using System;
 
@@ -12,6 +13,8 @@ namespace Design_Patterns
             Console.WriteLine("----------------------------------");
             Console.WriteLine("0 - Factory Method");
             Console.WriteLine("1 - Abstract Factory");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine("2 - Observer");
 
             var id = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +29,11 @@ namespace Design_Patterns
                     Console.Clear();
                     Console.WriteLine("");
                     ExecucaoAbstractFactory.Executar();
+                    break;
+                case 2:
+                    Console.Clear();
+                    Console.WriteLine("");
+                    ExecucaoObserver.Executar();
                     break;
                 default:
                     Console.WriteLine("Pattern não encontrado!");
